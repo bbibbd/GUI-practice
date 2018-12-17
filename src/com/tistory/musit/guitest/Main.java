@@ -1,13 +1,9 @@
 package com.tistory.musit.guitest;
 
 public class Main {
-	static final int locX = 400;
-	static final int locY = 600;
-	static final int sizeX = 600;
-	static final int sizeY = 400;
 	
 	public static void main(String[] args) {
-		SetFrame frame = new SetFrame("My First Frmae",locX,locY,sizeX,sizeY);
+		SetFrame frame = new SetFrame("My First Frmae",400, 600, 600, 400);
 		frame.setMenuBar();
 		frame.setJLabel();
 		frame.setJButton();
@@ -18,6 +14,18 @@ public class Main {
 		frame.setJTextField();
 		frame.setJTextArea();
 		frame.setVisible(true);
+		SetDialog dialog = new SetDialog(frame, "Continue?", true, 200, 100);
+		dialog.setContionue();
+		dialog.setVisible(true);
+		
+
+
+		
+		//SetFrame frame2 = new SetFrame("Main Frame", 400, 600, 300, 130);
+		//frame2.setContainer();
+		//frame2.setResizable(false);
+		//frame2.setVisible(true);
+		
 	}
 
 }

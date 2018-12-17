@@ -9,9 +9,10 @@ public class SetFrame extends JFrame{
 	
 	public SetFrame(String title, int x, int y, int sizeX, int sizeY) {
 			
-		setTitle(title);
+		super(title);
 		setLocation(x, y);
 		setSize(sizeX, sizeY);
+		//setResizable(false);	//사이즈 변경 불가능하게 하는 method
 	}
 	
 	public void setMenuBar() {
@@ -77,6 +78,7 @@ public class SetFrame extends JFrame{
 		r3.setHorizontalAlignment(JRadioButton.CENTER);
 	}
 	
+	
 	public void setJComboBox() {
 		String [] love = {"Kim Gibeom","Choi Kwunseok","Hong Saehyeon","Jealous Guy"}; 
 				
@@ -116,4 +118,29 @@ public class SetFrame extends JFrame{
 		add(p, BorderLayout.CENTER);
 		
 	}
+	
+	public void  setContainer() {
+		JLabel head = new JLabel("Enter your name");	//라벨을 만들어서
+		head.setHorizontalAlignment(JLabel.CENTER);
+		add(head, BorderLayout.NORTH);	//프래임 북쪽에 배치
+		
+		JPanel pc = new JPanel();	//새로운 패널 pc를 만들어서
+		JLabel name = new JLabel("Name: ");	//라벨 name과
+		JTextField tf = new JTextField(20);	//텍스트필드 ft를
+		
+		pc.add(name);	pc.add(tf);	//판넬 pc에 넣은 후
+		add(pc, BorderLayout.CENTER);	//그 판넬 pc를 프레임의 중앙에 넣는다.
+		
+		JPanel ps = new JPanel();	
+		JButton b1 = new JButton("confirm");
+		JButton b2 = new JButton("reset");
+		
+		ps.add(b1);	ps.add(b2);
+		add(ps, BorderLayout.SOUTH);
+	}
+	
+	
 }
+
+	//Container Example
+		
