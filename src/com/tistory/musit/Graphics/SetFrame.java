@@ -5,6 +5,7 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+
 public class SetFrame extends JFrame {
 	
 	public SetFrame(String title, int x, int y, int sizeX, int sizeY) {
@@ -22,4 +23,9 @@ public class SetFrame extends JFrame {
 		DrawRectangular rect = new DrawRectangular();
 		add(rect, BorderLayout.CENTER);
 	}
+	
+	public void setColorTest() {
+		add(new MyPanel(), BorderLayout.CENTER);
+	}
+	
 }

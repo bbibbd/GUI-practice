@@ -1,6 +1,7 @@
 package com.tistory.musit.Graphics;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -34,5 +35,14 @@ public class DrawRectangular extends JPanel {
 		
 		g.drawImage(img, 0, 150, 275, 154, this);
 		
+
+		g.setFont(new Font("한컴 백제 M", Font.PLAIN, 40));
+		g.drawString("Lee Cheeun", 300, 80);
+		
+		g.setFont(new Font("Monospaced",Font.BOLD ,15 ));
+		g.drawString("Lee Chenie Chenie", 300, 110);
+		
+		g.setFont(new Font("Serif",  Font.ITALIC , 30));
+		g.drawString("Lee Chenie Chenie", 300, 140);
 	}
 }

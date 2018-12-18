@@ -8,6 +8,8 @@ import javax.swing.JPanel;
 //기본적으로 라벨을 넣고 사이즈를 지정할 수 있는 판넬을 만들기 위한 클래스이다.
 public class SetJPanel extends JPanel {	
 	
+	private static final long serialVersionUID = -6220248856021570319L;
+
 	public SetJPanel(String s) {
 		add(new JLabel(s));
 	}

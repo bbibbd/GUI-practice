@@ -10,6 +10,7 @@ public class Main {
 		SetFrame layoutTestFrame = new SetFrame("Layout Test", 400, 600, 300, 200);
 		SetFrame calculatorLayout = new SetFrame("Layout Test", 400, 600, 400, 400);
 		SetFrame gridBagLayout = new SetFrame("Layout Test", 400, 600, 400, 400);
+		SetFrame exam = new SetFrame("Java Exam", 400, 600, 300, 300);
 		
 		//layoutTestFrame.jBorderLayout();
 		//layoutTestFrame.flowLayoutExample();

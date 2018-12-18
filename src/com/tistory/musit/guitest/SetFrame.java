@@ -177,7 +177,7 @@ public class SetFrame extends JFrame{
 	(2) FlowLayout - 위에서부터 순서대로 다 차면 아래쪽으로 내려옴, 기본적으로 Panel이 이 레이아웃을 따름
 		int parameter을 가진 생성자가 있는데, 기본적으로 정렬하게 해줌(LEFT, CENTER, RIGHT)
 		FlowLayout(int aligh, int 수평갭, int수직갭)
-	(3) GridLayout - 갹자 배치, 생성자는 각각 행과 열을 지정해줌, 거기에다가 더 추가하면 수평 수직간격을 추가할 수 있음
+	(3) GridLayout - 격자 배치, 생성자는 각각 행과 열을 지정해줌, 거기에다가 더 추가하면 수평 수직간격을 추가할 수 있음
 		GridLayout(int Row, int Column, int 수평갭, int 수직갭)
 	(4) GridBagLayout() - 한 컴포턴트가 여러 개의 격자를 사용할 수 있는 레이아웃, 생성자의 Parameter가 없으며, 
 		rows와 columns의 정보가 없다. GridBagConstraints객체를 통해 rows, columns, 크기 등을 지정할 수 있다. 
@@ -273,6 +273,8 @@ public class SetFrame extends JFrame{
 		
 		add(gp, BorderLayout.CENTER);
 	}
+	
+
 }
 
 
